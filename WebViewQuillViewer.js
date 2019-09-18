@@ -152,10 +152,9 @@ export default class WebViewQuillViewer extends React.Component {
   };
 
   render = () => {
-    if (this.state.asset) {
       return (
         <View style={{ flex: 1, overflow: 'hidden' }}>
-          {this.viewerIndexFileAsset ? (
+          {this.state.asset ? (
             <WebView
               style={{ ...StyleSheet.absoluteFillObject }}
               ref={this.createWebViewRef}
@@ -178,10 +177,6 @@ export default class WebViewQuillViewer extends React.Component {
             )}
         </View>
       );
-    }
-    return (
-      <ActivityIndicator />
-    );
   }
 
 }
