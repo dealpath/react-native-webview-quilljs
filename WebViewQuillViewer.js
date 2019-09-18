@@ -10,12 +10,12 @@ import {
   View,
   ActivityIndicator,
   StyleSheet,
-  WebView,
   Platform
 } from 'react-native';
 import PropTypes from 'prop-types';
 import renderIf from 'render-if';
 import AssetUtils from 'expo-asset-utils';
+import { WebView } from 'react-native-webview';
 
 // path to the file that the webview will load
 const VIEWER_INDEX_FILE_PATH = require(`./assets/dist/reactQuillViewer-index.html`);
